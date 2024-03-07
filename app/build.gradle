@@ -28,14 +28,14 @@ android {
             properties.load(new FileInputStream(propertiesFile))
 
             properties.load(new FileInputStream(propertiesFile))
-            signingConfigs {
-                debug {
-                    storeFile file(properties["signingConfig.storeFile"])
-                    storePassword properties["signingConfig.storePassword"]
-                    keyAlias properties["signingConfig.keyAlias"]
-                    keyPassword properties["signingConfig.keyPassword"]
-                }
-            }
+//            signingConfigs {
+//                debug {
+//                    storeFile file(properties["signingConfig.storeFile"])
+//                    storePassword properties["signingConfig.storePassword"]
+//                    keyAlias properties["signingConfig.keyAlias"]
+//                    keyPassword properties["signingConfig.keyPassword"]
+//                }
+//            }
         }
     }catch(IOException ignored){}
     defaultConfig {
